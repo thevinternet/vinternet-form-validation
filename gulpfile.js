@@ -108,13 +108,13 @@ gulp.task('javascript', () => {
 });
 
 // Run All Asset Compilation Tasks
-gulp.task('compile', gulp.series('root', 'html', 'css', 'javascript'));
+gulp.task('compile', gulp.series('root', 'pug', 'css', 'javascript'));
 
 // Watch Task (gulp-watch)
 gulp.task('watch', (done) => {
   gulp.watch(src + 'images/**/*', gulp.parallel('images'));
   gulp.watch(src + '*.*', gulp.parallel('root'));
-  gulp.watch(src + 'html/**/*', gulp.parallel('html'));
+  gulp.watch(src + 'templates/**/*', gulp.parallel('pug'));
   gulp.watch(src + 'scss/**/*', gulp.parallel('css'));
   gulp.watch(src + 'js/**/*', gulp.parallel('javascript'));
   done();
