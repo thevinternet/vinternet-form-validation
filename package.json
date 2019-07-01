@@ -14,8 +14,7 @@
   "homepage": "https://github.com/thevinternet/vinternet-form-validation#readme",
   "main": "server.js",
   "scripts": {
-    "start": "gulp build",
-    "develop": "gulp local"
+    "start": "gulp build"
   },
   "engines": {
     "node": "11.12.0",
