@@ -1,0 +1,12 @@
+doctype html
+html(lang="en")
+  -var pugin = true
+  include ../elements/head.pug
+  body.vinternet
+    include ../elements/_elements.pug
+    include ../elements/header.pug
+    main
+      block content
+    include ../elements/footer.pug
+    script(src="/js/main.js")
+    block script
