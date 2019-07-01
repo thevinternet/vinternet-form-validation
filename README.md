@@ -1,5 +1,5 @@
 # Vinternet Form Validation
-A form validation script which utilises HTML5 attributes and JavaScript to provide an accessible validation experience in real time for an HTML form which includes many common user input types. At present validation is only configured for 'missing input' and 'regex pattern matching' with the intension of expanding support for the other HTML validity object properties.
+An HTML form validation script which utilises HTML5 attributes and JavaScript to provide an accessible validation experience in real time for many common user input types. At present validation is only configured for 'missing input' and 'regex pattern matching' (which I felt were certainly the most common) with the intension of expanding support for the other HTML validity object properties (note that standard HTML constraint attributes like 'max-length' are also employed here).
 
 ## Requirements
 
@@ -16,7 +16,7 @@ A form validation script which utilises HTML5 attributes and JavaScript to provi
 
 You can configure the custom client side validation error messages by changing the `data-error` attribute of the HTML input to your desired string e.g. `data-error="Please enter a valid email address"`.
 
-You can also configure the regex pattern matching validation rules to suit your needs by changing the necessary HTML input attribute using the pug form mixins as a guide `templates/elements/_form.pug`.
+You can also configure the regex pattern matching validation rules to suit your needs by changing the necessary HTML input attribute and using the pug form mixins as a guide `templates/elements/_form.pug`.
 
 ## Browser Support
 
