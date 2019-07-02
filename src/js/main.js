@@ -14,7 +14,7 @@
       validationElements: [].slice.call(document.querySelectorAll('[required]'))
     }
 
-    // **************************** ELEMENT VALIDITY CHECK *******************************************//
+    // ****************************** ELEMENT VALIDITY CHECK *******************************************//
 
     // Function to check element validity status
     const validationCheck = (event) => {
@@ -32,7 +32,7 @@
       }
     }
 
-    // ***************************** HANDLE INVALID ELEMENTS ***************************************//
+    // ******************************* HANDLE INVALID ELEMENTS *****************************************//
 
     // Function to handle invalid element and provide user feedback
     const validationErrorHandling = (targetElement, validityObj) => {
@@ -62,7 +62,7 @@
       }
     }
 
-    // **************************** CONSTRUCT CUSTOM ERROR MESSAGE **********************************//
+    // ****************************** CONSTRUCT CUSTOM ERROR MESSAGE ***********************************//
 
     // Function to construct and return custom HTML error message
     const constructErrorMessage = (targetElementName, errorMessageText) => {
@@ -77,7 +77,7 @@
       return errorMessageHTML;
     }
 
-    // *************************** CUSTOM ERROR MESSAGE POSITION ***********************************//
+    // ****************************** CUSTOM ERROR MESSAGE POSITION ************************************//
 
     // Function to identify and return correct DOM location to insert error message
     const calculateErrorPosition = (targetElement) => {
@@ -94,7 +94,7 @@
       return errorMessagePosition;
     }
 
-    // ****************************** HANDLE VALID ELEMENTS ***************************************//
+    // ********************************* HANDLE VALID ELEMENTS *****************************************//
 
     // Function to handle a valid element and provide user feedback
     const validationPassed = (targetElement) => {
@@ -124,7 +124,7 @@
       }
     }
 
-    // ******************************* FILE SUBMISSION MESSAGE **************************************** //
+    // ******************************** FILE SUBMISSION MESSAGE *************************************** //
 
     const userFormSubmit = (event) => {
       // Prevent default actions on form
@@ -148,7 +148,7 @@
       domElements.userFormContainer.appendChild(statusMessageHolder);
     }
 
-    // ******************************** EVENT LISTENERS ********************************************* //
+    // *********************************** EVENT LISTENERS ******************************************** //
 
     // Add event listeners to each element requiring validation
     domElements.validationElements.forEach((element) => {
