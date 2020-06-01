@@ -1,4 +1,5 @@
 # Vinternet Form Validation
+
 An HTML form validation script which utilises HTML5 attributes and JavaScript to provide an accessible validation experience in real time for many common user input types. At present validation is only configured for 'missing input' and 'regex pattern matching' (which I felt were certainly the most common) with the intension of expanding support for the other HTML validity object properties (note that standard HTML constraint attributes like 'max-length' are also employed here).
 
 ## Requirements
@@ -10,7 +11,7 @@ An HTML form validation script which utilises HTML5 attributes and JavaScript to
 
 * To install, clone from GitHub and run `npm install` in the cloned directory
 * Once install is complete, run `gulp local`
-* Browse to http://localhost:5000 to view application in your chosen browser
+* Browse to [http://localhost:5000](http://localhost:5000) to view application in your chosen browser
 
 ## Configuration
 
@@ -23,6 +24,7 @@ You can also configure the regex pattern matching validation rules to suit your 
 This application performs as expected across all evergreen browsers (Firefox, Chrome, Edge, Safari, etc) and will work correctly in versions of Internet Explorer 10 and above.
 
 ## Contributing
+
 If you wish to submit a bug fix or feature, you can create a pull request and it will be merged pending a code review.
 
 1. Fork the repository
